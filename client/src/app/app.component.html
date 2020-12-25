@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Test task TechStack</h1>
+
+  <app-add-form (onAdd)="updateList($event)"></app-add-form>
+  <hr>
+
+  <div class="container">
+    <h3>Rent bikes ({{rentBikes.length}})</h3>
+    <app-card-rent *ngFor="let bike of rentBikes"
+    [bike]="bike"
+    (onCancel)="cancelRent($event)"
+    ></app-card-rent>
+  </div>
+    <hr>
+  <div class="container">
+    <h3>Availabel bikes ({{availabelBikes.length}})</h3>
+    <app-card-available *ngFor="let bike of availabelBikes"
+    [bike]="bike"
+    (onRent)="rentBike($event)"
+    (onDelete)="removeBike($event)"></app-card-available>
+  </div>
+
+  
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+    <form class="card" [formGroup]="form" (ngSubmit)="submit()">
+        <div class="form-control">
+            <label>Bike name</label>
+            <input type="text" placeholder="Name" formControlName="name">
+        </div>
+        <div class="form-control">
+            <label>Bike type</label>
+    
+            <select formControlName="type">
+              <option value="Type 1">Type 1</option>
+              <option value="Type 2">Type 2</option>
+              <option value="Type 3">Type 3</option>
+            </select>
+          </div>
+        <div class="form-control">
+            <label>Rent price</label>
+            <input type="text" placeholder="Price" formControlName="price">
+        </div>
+
+        <button class="btn btn-success" type="submit" [disabled]="form.invalid">Submit</button>
+    </form>
+</div>
