@@ -8,16 +8,16 @@
             <label>Bike type</label>
     
             <select formControlName="type">
-              <option value="Type 1">Type 1</option>
-              <option value="Type 2">Type 2</option>
-              <option value="Type 3">Type 3</option>
+              <option value="Mountain bike">Mountain bike</option>
+              <option value="Road bike">Road bike</option>
+              <option value="Hybrid bike">Hybrid bike</option>
             </select>
           </div>
         <div class="form-control">
-            <label>Rent price</label>
-            <input type="text" placeholder="Price" formControlName="price">
+            <label>Rent price ($)</label>
+            <input type="number" placeholder="Price" formControlName="price">
         </div>
 
-        <button class="btn btn-success" type="submit" [disabled]="form.invalid">Submit</button>
+        <button class="btn btn-success" type="submit" [disabled]="form.invalid">Submit rent</button>
     </form>
 </div>

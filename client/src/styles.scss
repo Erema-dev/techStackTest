@@ -5,13 +5,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: rgb(207, 214, 207);
   color: #333;
 }
 
@@ -19,6 +20,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 1rem;
+  
 }
 
 a {
@@ -48,12 +50,35 @@ img {
   margin-right: 0.2rem;
   transition: opacity 0.2s ease-in;
   outline: none;
-  
+
   &:disabled {
     background: #ccc;
     color: #000;
     cursor: not-allowed;
   }
+}
+
+.btn-success{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 0.4rem 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 0.5rem;
+}
+.btn-cancel{
+  background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 0.4rem 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 0.5rem;
 }
 
 .btn:hover {
@@ -86,6 +111,7 @@ img {
   padding: 1rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
+  background-color: rgb(237, 250, 237);
 }
 
 input,
